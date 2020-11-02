@@ -1,0 +1,22 @@
+drop  TABLE `mytransact`.`tbl_portfolio_comments`;
+CREATE TABLE `mytransact`.`tbl_portfolio_comments` (
+  `sno` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NULL,
+  `emailid` VARCHAR(85) NULL,
+  `comments` TEXT(500) NULL,
+  `dateat` DATE NULL,
+  `timeat` TIME NULL,
+  `sstatus` VARCHAR(5) NULL,
+  PRIMARY KEY (`sno`));
+
+
+==============
+drop TABLE `mytransact`.`tbl_portfolio_content` ;
+CREATE TABLE `mytransact`.`tbl_portfolio_content` (
+  `sno` INT NOT NULL AUTO_INCREMENT,
+  `workstatus` VARCHAR(45) NULL,  
+  `dateat` DATE NULL, 
+   `extra` VARCHAR(45) NULL,  
+  `sstatus` VARCHAR(5) NULL,
+  PRIMARY KEY (`sno`));
+
